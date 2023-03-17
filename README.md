@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/velvetrose/advice-generator-app.git)
-- Live Site URL: [Live Site](https://velvetrose.github.io/advice-generator-app/)
+- Solution URL: [Solution](https://github.com/velvetrose/advice-generator-app-main.git)
+- Live Site URL: [Live Site](https://velvetrose.github.io/advice-generator-app-main/)
 
 
 ### Built with
