@@ -1,0 +1,22 @@
+<header></header>
+<main>
+  <div class="container">
+    <p class="id">{{adviceID}}</p>
+    <p class="quote">{{adviceQuote}}</p>
+    <picture>
+      <source media="(max-width:550px)" srcset="assets/images/pattern-divider-mobile.svg">
+      <source media="(min-width:551px)" srcset="assets/images/pattern-divider-desktop.svg">
+      <img src="assets/images/pattern-divider-desktop.svg" alt="divider">
+    </picture>
+    <button class="random-dice" (click)="randomizeQuote()">
+      <img src="assets/images/icon-dice.svg" alt="dice">
+    </button>
+  </div>
+</main>
+<footer>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/velvetrose">Sarah Susan</a>.
+  </div>   -->
+</footer>
+
