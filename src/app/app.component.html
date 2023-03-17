@@ -1,15 +1,21 @@
 <header></header>
 <main>
   <div class="container">
-    <p class="id">{{adviceID}}</p>
-    <p class="quote">{{adviceQuote}}</p>
+    
+    <div class="advice">
+      <p class="id">{{adviceID}}</p>
+      <p class="quote">{{adviceQuote}}</p> 
+    </div>
     <picture>
       <source media="(max-width:550px)" srcset="assets/images/pattern-divider-mobile.svg">
       <source media="(min-width:551px)" srcset="assets/images/pattern-divider-desktop.svg">
       <img src="assets/images/pattern-divider-desktop.svg" alt="divider">
     </picture>
     <button class="random-dice" (click)="randomizeQuote()">
-      <img src="assets/images/icon-dice.svg" alt="dice">
+      <div *ngIf="isLoading">
+        <mat-spinner [diameter]="30"></mat-spinner>
+      </div>
+      <img *ngIf="!isLoading" src="assets/images/icon-dice.svg" alt="dice">
     </button>
   </div>
 </main>

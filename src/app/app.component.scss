@@ -61,6 +61,23 @@ $font-weight:800; //Font Weight
 picture img{
     width: 100%;
 }
+.advice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+// .mat-mdc-progress-spinner .mdc-circular-progress__determinate-circle, 
+// .mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic {
+//     stroke: $neon-green !important;
+// }
+:host::ng-deep{
+    .mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic{
+        stroke: $dark-blue;
+    }
+}
 
 
 
